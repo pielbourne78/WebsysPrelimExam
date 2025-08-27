@@ -62,6 +62,7 @@
         echo "</div>";
     }
     ?>
+    
         <!--Form para sa input ng user-->
     <div class="calculator">
         <form method="post">
