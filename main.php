@@ -9,7 +9,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Tagalog: I-define ang weights ng bawat component
     $quiz_weight = 0.3;       // 30%
     $assignment_weight = 0.3; // 30%
-    $exam_weight = 0.4;       // 40%
+    $exam_score = 0.4;       // 40%
+    $weighted_average = ($quiz * $quiz_weight) + ($assignment * $assignment_weight) + ($exam * $exam_weight);
 
     // Tagalog: I-validate kung lahat ng input ay numeric at nasa pagitan ng 0 at 100
     if (
@@ -17,9 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         is_numeric($assignment) && $assignment >= 0 && $assignment <= 100 &&
         is_numeric($exam) && $exam >= 0 && $exam <= 100
     ) {
-        // Tagalog: I-compute ang weighted average
-        $weighted_average = ($quiz * $quiz_weight) + ($assignment * $assignment_weight) + ($exam * $exam_weight);
-
+       
         // Tagalog: Tukuyin ang letter grade base sa weighted average
         if ($weighted_average >= 90) {
             $grade = "A";
