@@ -17,10 +17,10 @@
         $assignment = $_POST['assignment'] ?? '';
         $exam = $_POST['exam'] ?? '';
 
-        // Para malaman na valid yung input ng user
+        // Para malaman na valid yung input ng user at kumpleto
         if ($quiz === '' || $assignment === '' || $exam === '') {
             $error = "All fields must be filled.";
-        // Check kung numeric ba yung input ng user
+        // Mamali kung hindi numeric yung input ng user at hindi string or characters
         } elseif (
             !is_numeric($quiz) || !is_numeric($assignment) || !is_numeric($exam)
         ) {
