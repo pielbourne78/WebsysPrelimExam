@@ -62,7 +62,7 @@
         echo "</div>";
     }
     ?>
-        <!--Form para sa input ng user-->
+        <!--Form para sa input ng user lalagyan ng icocompute-->
     <div class="calculator">
         <form method="post">
             <input type="text" name="quiz" placeholder="Quiz score" required
