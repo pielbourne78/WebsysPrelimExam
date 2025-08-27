@@ -73,8 +73,7 @@
                 value="<?php echo isset($_POST['exam']) ? htmlspecialchars($_POST['exam']) : ''; ?>">
             <button type="submit">Submit</button>
         </form>
-        
-        
+         
     </div>
 </body>
 </html>
